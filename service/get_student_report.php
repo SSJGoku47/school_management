@@ -59,9 +59,8 @@ if (isset($_GET['student_id'])) {
     echo json_encode(['error' => 'No student ID provided']);
 }
 
-function calculateGrade($totalMarks, $subjectCount) { // Grade assign based on marks 
-    if ($subjectCount == 0) return 'N/A'; // No subjects
-
+function calculateGrade($totalMarks, $subjectCount) {                   // Grade assign based on marks 
+    if ($subjectCount == 0) return 'N/A';                                       // No marks assigned check
     $averageMarks = $totalMarks / $subjectCount;
 
     if ($averageMarks >= 90) return 'A';

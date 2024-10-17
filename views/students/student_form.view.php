@@ -1,3 +1,4 @@
+<!-- views/students/student.view.php -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,6 +50,7 @@ endif;
                     <select name="gender" required class="form-control">
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
+                        <option value="Female">Other</option>
                     </select>
                 </div>
 

@@ -12,13 +12,5 @@ class Marks {
         $stmt = $this->conn->prepare($sql);
         return $stmt->execute([$studentId, $subjectId, $marks]);
     }
-
-    // Fetch marks by student ID
-    public function fetchByStudentId($studentId) {
-        $sql = "SELECT * FROM marks WHERE student_id = ?";
-        $stmt = $this->conn->prepare($sql);
-        $stmt->execute([$studentId]);
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
 }
 ?>

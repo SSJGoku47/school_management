@@ -1,4 +1,4 @@
-<!-- views/home.view.php -->
+<!-- views/dashboard/home.view.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

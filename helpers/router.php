@@ -3,13 +3,13 @@
 
 require_once '../config/database.php'; 
 
-function routeRequest() {
+function routeRequest() {                                                                           // Dynamic router configuration
     global $conn;
 
     $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     $method = $_SERVER['REQUEST_METHOD'];
 
-    $routes = require_once '../app/core/routes.php';
+    $routes = require_once '../app/core/routes.php';                                                   // Route list
 
     foreach ($routes as $route) {
         error_log("Checking route: " . $route['path'] . " against URI: " . $uri);
